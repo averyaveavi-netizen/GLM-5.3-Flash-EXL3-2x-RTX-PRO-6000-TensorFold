@@ -1,0 +1,118 @@
+{
+  "model": "GLM-5.3-Flash EXL3",
+  "system": [
+    {
+      "label": "MODEL",
+      "value": "GLM-5.3-Flash EXL3"
+    },
+    {
+      "label": "ENGINE",
+      "value": "TensorFold v0.6.6 + 86 patches"
+    },
+    {
+      "label": "BENCH",
+      "value": "sparkDash on TensorFold v0.6.5"
+    },
+    {
+      "label": "PATCHES",
+      "value": "54 Mia's AI Lab + 32 Aevonix Research"
+    },
+    {
+      "label": "GPUs",
+      "value": "2x RTX PRO 6000 · TP2"
+    },
+    {
+      "label": "POWER",
+      "value": "300 W per GPU"
+    },
+    {
+      "label": "CONTEXT",
+      "value": "512K tokens/request"
+    },
+    {
+      "label": "KV POOL",
+      "value": "1,062,912 tokens shared"
+    },
+    {
+      "label": "SERVING",
+      "value": "Up to 4 concurrent requests"
+    },
+    {
+      "label": "FORMATS",
+      "value": "EXL3 4-bit · q4 dense · FP8 KV"
+    },
+    {
+      "label": "DRAFTER",
+      "value": "Stock DFlash2 + copy drafts"
+    },
+    {
+      "label": "VISION",
+      "value": "Images on by default"
+    },
+    {
+      "label": "START",
+      "value": "One-time TP2 launch-table autotune"
+    }
+  ],
+  "chart": [
+    {
+      "label": "prose ×1",
+      "value": 238.31,
+      "tone": 0
+    },
+    {
+      "label": "prose ×2",
+      "value": 325.59,
+      "tone": 0
+    },
+    {
+      "label": "prose ×4",
+      "value": 448.67,
+      "tone": 0
+    },
+    {
+      "label": "code ×1",
+      "value": 350.81,
+      "tone": 1
+    },
+    {
+      "label": "code ×2",
+      "value": 486.01,
+      "tone": 1
+    },
+    {
+      "label": "code ×4",
+      "value": 584.47,
+      "tone": 1
+    },
+    {
+      "label": "struc ×1",
+      "value": 445,
+      "tone": 2
+    },
+    {
+      "label": "struc ×2",
+      "value": 702.91,
+      "tone": 2
+    },
+    {
+      "label": "struc ×4",
+      "value": 651.25,
+      "tone": 2
+    }
+  ],
+  "chart_title": "sparkDash · greedy · 300 W",
+  "corner": "86 patches · 300 W",
+  "opener": "GLM-5.3-Flash EXL3 // 2x RTX PRO 6000 // TensorFold v0.6.6",
+  "credit": "TensorFold by Ash Hart · In collaboration with Mia's AI Lab",
+  "start_sequence": [
+    "check host",
+    "build pinned engine",
+    "download pinned checkpoint",
+    "compile and autotune",
+    "start local ranks",
+    "wait for API",
+    "smoke test"
+  ],
+  "endpoint": "API :8022 · glm-5.3-flash"
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Copy to scripts/local.sh. Exported environment values take precedence.
+# All defaults and engine switches are documented in scripts/config.sh.
+PORT=8022
+GPUS=0,1
+DENSE=q4                      # lossy dense weights; FP8 dense is not tested on two GPUs
+DRAFT_POLICY=fnc7:0.3
+PARALLEL=4
+CONTEXT=524288
+KV=fp8
+MAX_TOKENS=32768
+VISION=1                      # images/video enabled; VISION=0 frees vision memory on GPU 0
+MEMORY_RESERVE_GIB=6
+KV_POOL_GIB=3.75
+MEASURED_POWER_W=300           # warns when a selected GPU differs; never changes its power limit
+THINKING=0
+# Commercial use without DFlash2 weights:
+# DRAFTER=mtp
+# PARALLEL=1
+# Store downloaded weights and compiled kernels outside the checkout:
+# DATA_DIR=/mnt/models/glm53-2x
+# HF_TOKEN may be exported for downloads; never commit it.
