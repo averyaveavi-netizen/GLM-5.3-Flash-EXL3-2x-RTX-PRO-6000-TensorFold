@@ -51,7 +51,7 @@ LOG_KEEP="${LOG_KEEP:-10}"                      # newest 10 compressed session l
 # One host, two GPUs with CUDA peer access; no remote ranks or external network transport.
 TP="${TP:-2}"
 GPUS="${GPUS:-0,1}"
-PORT="${PORT:-8022}"
+PORT="${PORT:-8020}"
 HOST="${HOST:-0.0.0.0}"
 MASTER_PORT="${MASTER_PORT:-29553}"
 SERVED_NAME="${SERVED_NAME:-glm-5.3-flash}"
